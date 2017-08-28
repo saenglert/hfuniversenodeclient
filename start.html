@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <title>HFUniverse | Client Test</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <input type="button" id="submit" value="Abschicken">
+    <fieldset>
+        <legend>Login</legend>
+        <label>User<input id="user" name="user" required></label>
+        <label>Password<input id="password" type="password" required></label>
+        <input type="button" id="create" value="Create Account">
+        <input type="button" id="login" value="Login">
+    </fieldset>
+    <input type="button" id="logout" value="Logout">
+    <fieldset id="output">
+        <legend>Output</legend>
+    </fieldset>
 </body>
 </html>
